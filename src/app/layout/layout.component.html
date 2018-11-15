@@ -1,0 +1,181 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header" align="center">
+      <h4> <img src="assets/logo-white.png" width="150px" > </h4>
+      <strong>LBIT</strong>
+    </div>
+
+    <div  align="right" mat-button style="padding-top:10px;padding-bottom:0px;border-bottom:1px solid #ccc;">
+      <ul class="list-unstyled " style="padding:0px;">
+      <li routerLinkActive="active current">
+            <a routerLink="/home" mat-button >
+                <i class="far fa-user"></i>
+              Narendra
+            </a>
+          
+          </li>
+        </ul>
+       </div>
+  
+
+
+    <ul class="list-unstyled components">
+      <!-- <li routerLinkActive="active current"> -->
+
+        <!-- class="active" -->
+
+        <!-- <a routerLink="/home1" mat-button>
+          <i class="fas fa-home"></i>
+          Home
+        </a> -->
+
+      <!-- </li> -->
+      <li routerLinkActive="active current">
+        <a routerLink="dashboard" mat-button>
+           
+            <i class="fas fa-briefcase"></i>
+            DashBoard 
+        </a>
+        </li>
+        <li>
+        <a href="#pageSubmenu" mat-button data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-copy"></i>
+          Projects
+        </a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li routerLinkActive="active current">
+            <a routerLink="/projects" mat-button >
+            
+              View </a>
+          </li>
+          <li routerLinkActive="active current">
+            <a routerLink="/newproject" mat-button>Add</a>
+          </li>
+          <li routerLinkActive="active current">
+            <a routerLink="/projectmapping" mat-button> Mapping </a>
+          </li>
+        </ul>
+      
+      </li>
+
+
+      <li routerLinkActive="active current">
+        <a routerLink="/resources" mat-button>
+          <i class="fas fa-users"></i>
+          Resources
+        </a>
+      </li>
+
+
+
+
+      <li >
+        <a href="#homeSubmenu" mat-button data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fas fa-clock"></i>
+          TimeSheet
+        </a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li routerLinkActive="active current">
+            <a routerLink="/timesheet" mat-button > View </a>
+          </li>
+          <li routerLinkActive="active current">
+              <a routerLink="/emptimesheet" mat-button > Timesheet (employee-clone-place) </a>
+            </li>
+            <li routerLinkActive="active current">
+                <a routerLink="/newtimesheet" mat-button > Add-Timesheet (Employee) </a>
+              </li>
+      
+        </ul>
+      </li>
+      <li routerLinkActive="active current">
+        <a routerLink="/admincalendar" mat-button>
+          <i class="fas fa-calendar"></i>
+          Calendar
+        </a>
+      </li>
+      <li routerLinkActive="active current">
+        <a routerLink="/empcalendar" mat-button>
+          <i class="fas fa-calendar"></i>
+          Calendar (Emp)
+        </a>
+      </li>
+      <li routerLinkActive="active current" >
+        <a routerLink="/client" mat-button>
+          <i class="fas fa-fire"></i>
+          Client
+        </a>
+      </li>
+      <li routerLinkActive="active current" >
+        <a routerLink="/report" mat-button>
+          <i class="fas fa-fire"></i>
+          Reports
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content" >
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse"  mat-button  (click)=" sidecalling() " >
+        
+          <i  class="fas fa-chevron-circle-right"></i> 
+          <!-- <span>Toggle Sidebar</span> -->
+        </button>
+
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-align-justify"></i>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto ">
+
+          </ul>
+        </div>
+        <div class="dropdown" >
+            <button  class="btn  " mat-button  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"> Logout </button>
+                       </div>
+          </div>
+
+      </div>
+    </nav>
+
+    <div class="content">
+
+
+<!-- <app-dashboard> </app-dashboard> -->
+
+<!-- <app-profile> </app-profile>  -->
+
+<router-outlet>  </router-outlet>
+
+    </div>
+
+    <div class="line"> </div>
+
+    <div>
+
+      <footer class="footer">
+
+        <span class="footerin"> presented by LinkBiz It solutions </span>
+
+      </footer>
+
+
+
+    </div>
+
+  </div>
+</div>

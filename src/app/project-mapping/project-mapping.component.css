@@ -1,0 +1,15 @@
+.title
+{
+    border-bottom:1px solid #ccc;
+    padding-left:10px;
+}
+
+.icon
+{
+    padding: 5px 0px 4px 0px;
+}
+
+ngx-select-dropdown
+{
+    font-size: 18px;
+}

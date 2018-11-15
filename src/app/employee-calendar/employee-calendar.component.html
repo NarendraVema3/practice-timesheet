@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="col-xl-12">
+
+        <div class="container-fluid">
+           
+
+                <div class="col-xl-12" align="center">
+                    <div *ngIf="calendarOptions" class="my-ng-fullcalendar" >
+                        <ng-fullcalendar  #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)"
+                            (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
+                    </div>
+                </div>
+
+           
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.ttbg
+{
+    /* border-radius: 50%; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  
+    border: 1px solid #ccc;
+    /* background-color: antiquewhite; */
+    background-image: url("https://i.imgur.com/tXtwrPd.jpg");
+   
+    height: 170px;
+    transform: translateY(-61%);
+}
+
+
+.rounded-circle
+{
+         width: 150px;
+         height:150px;
+         z-index: 50;
+         margin-top: -14%;
+         transform: translateX(470%); 
+}
+
+
+.borderless{
+
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+
+
+}
+
+
+td{
+    text-transform: capitalize;
+}
+
+tr{
+    border: none;
+}
+
+
+.card
+{
+    border: none;
+}

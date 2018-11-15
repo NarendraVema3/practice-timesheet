@@ -1,0 +1,21 @@
+.table
+{
+    border:none;
+}
+.activity
+{
+    width: 200px;
+}
+.bill
+{
+    width: 80px;
+}
+tr
+{
+    border-top: none;
+    border-bottom: none;
+}
+input[readonly]
+{
+    background-color: white;
+}

@@ -1,0 +1,637 @@
+<div class="container">
+  <div style="float:right">
+    <a (click)="viewmode = 'today'">
+      <button mat-raised-button> today </button>
+    </a>
+    <a (click)="viewmode = 'Week'">
+      <button mat-raised-button> Week </button>
+    </a>
+    <a (click)="viewmode = 'month'">
+      <button mat-raised-button> month </button>
+    </a>
+  </div>
+</div>
+<br>
+
+<br>
+<div [ngSwitch]="viewmode">
+  <div class="case " *ngSwitchCase="'today'">
+
+    <div class="container" align="center" style="margin-top:5%;">
+
+      <div class="col-xl-8">
+
+        <div class="row">
+          <label> project :</label>
+          <select class="custom-select">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="row">
+          <label> Reporting To :</label>
+          <select class="custom-select">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="row">
+          <label> Reporting To :</label>1
+          <input type="date" class="form-control">
+
+        </div>
+
+        <br>
+        <div class="row">
+          <label> Hours :</label>
+          <select class="custom-select">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <br>
+        <div class="row">
+          <select class="custom-select">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="case" *ngSwitchCase="'Week'">
+
+
+    <div class="col-xl-12">
+
+      <div class="row">
+        <div class="col-xl-3" >
+          <label>Name</label>
+          <div class="form-group">
+
+            <input type="text" class="form-control" value="Narendra" readonly>
+          </div>
+        </div>
+        <div class="col-xl-3">
+
+        <!-- <div style="border:1px solid #ccc; padding-top:2px; padding-bottom:2px; padding-left:5px;"> -->
+          <mat-form-field>
+            <input class="form-control" matInput [matDatepicker]="picker" placeholder="Choose Form Date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        <!-- </div> -->
+
+        </div>
+
+        <div class="form-group col-xl-3">
+          <label> Employee No </label>
+          <input type="text" class="form-control" value="12k61a05b2" readonly>
+        </div>
+      </div>
+
+
+      <div class="container-fluid" style="margin-top:2%;">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"> Project </th>
+              <th scope="col"> Activity </th>
+              <th scope="col"> Task </th>
+              <th scope="col"> Bill </th>
+              <th scope="col"> Sun </th>
+              <th scope="col"> Mon </th>
+              <th scope="col"> Tue </th>
+              <th scope="col"> Wed </th>
+              <th scope="col"> Thu </th>
+              <th scope="col"> Fri </th>
+              <th scope="col"> Sat </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="activity">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </td>
+              <td class="bill">
+                <select class="custom-select" id="inputGroupSelect01">
+
+                  <option value="1" selected>Y</option>
+                  <option value="2">N</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td> total :</td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+              <td>
+                <input type="text" class="form-control"> </td>
+
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class="case" *ngSwitchCase="'month'" align="center">
+
+    <!-- <div align="center" style="margin-top:10%;color:red;">
+      <h1> Monthly Timesheet will Come Soon </h1>
+    </div> -->
+    <div>
+
+      <form #formRef="ngForm">
+
+        <div class="col-xl-8">
+
+          <div class="row">
+
+            <label> project :</label>
+            <select class="custom-select">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <br>
+            <br>
+            <div style="float:right">
+              <button class="btn btn-primary" [disabled]="!formRef.form.valid" (click)="add()">Add input</button>
+            </div>
+          </div>
+
+
+          <br>
+
+          <div class="row">
+            <label> Reporting To :</label>
+            <select class="custom-select">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <br>
+
+          <div class="row">
+            <label> Reporting To :</label>1
+            <input type="date" class="form-control">
+
+          </div>
+
+          <br>
+          <div class="row">
+            <label> Hours :</label>
+            <select class="custom-select">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <br>
+
+
+
+
+          <div class="row container-fluid col-xl-12">
+            <div *ngFor="let word2 of words2; let in=index" class="col-xl-4">
+              <!-- <div class="form-group">
+          <input type="text" [(ngModel)]="words2[in].value" name="name{{in}}" class="form-control" #name="ngModel" required /> -->
+              <!--<p [hidden]="words2[in].value">Field is required</p>
+          {{formRef.form.name1}}-->
+              <!-- </div> -->
+
+              <select class="custom-select" [(ngModel)]="words2[in].value" name="name{{in}}" #name="ngModel" required>
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <br>
+              <br>
+
+            </div>
+            <br>
+
+            <div *ngFor="let word2 of words2; let in=index" class="col-xl-4">
+              <!-- <div class="form-group">
+            <input type="text" [(ngModel)]="words2[in].value" name="name{{in}}" class="form-control" #name="ngModel" required /> -->
+              <!--<p [hidden]="words2[in].value">Field is required</p>
+            {{formRef.form.name1}}-->
+              <!-- </div> -->
+
+              <select class="custom-select" [(ngModel)]="words2[in].value" name="name{{in}}" #name="ngModel" required>
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+
+            </div>
+            <br>
+
+            <div *ngFor="let word2 of words2; let in=index" class="col-xl-4">
+              <!-- <div class="form-group">
+              <input type="text" [(ngModel)]="words2[in].value" name="name{{in}}" class="form-control" #name="ngModel" required /> -->
+              <!--<p [hidden]="words2[in].value">Field is required</p>
+              {{formRef.form.name1}}-->
+              <!-- </div> -->
+
+              <select class="custom-select" [(ngModel)]="words2[in].value" name="name{{in}}" #name="ngModel" required>
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+
+
+            </div>
+            <br>
+          </div>
+        </div>
+
+      </form>
+
+
+    </div>
+
+
+  </div>
+</div>

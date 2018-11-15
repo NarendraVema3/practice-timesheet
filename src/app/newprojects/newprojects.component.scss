@@ -1,0 +1,93 @@
+.title
+{
+    border-bottom:1px solid #ccc;
+    padding-left:10px;
+}
+
+.icon
+{
+    padding: 5px 0px 4px 0px;
+}
+
+li{
+    list-style-type: none;
+    color:white;
+    padding:20px 10px 20px 10px;
+}
+.modal-dialog {
+    width: 1800px;  
+}
+.modal-lg {
+    max-width: 90%;
+    max-height:50%;
+}
+.modal {
+    &.scale {
+      .modal-dialog {
+        transition-property: all;
+        transform: scale(0.75);
+      }
+  
+      &.in .modal-dialog {
+        transform: scale(1);
+      }
+    }
+  
+    &.from-left {
+      .modal-dialog {
+        transition-property: all;
+        transform: translateX(-100%);
+      }
+  
+      &.in .modal-dialog {
+        transform: translateX(0);
+      }
+    }
+  
+    &.from-right {
+      .modal-dialog {
+        transition-property: all;
+        transform: translateX(100%);
+      }
+  
+      &.in .modal-dialog {
+        transform: translateX(0);
+      }
+    }
+  
+    &.from-bottom {
+      .modal-dialog {
+        transition-property: all;
+        transform: translateY(100%);
+      }
+  
+      &.in .modal-dialog {
+        transform: translateY(0);
+      }
+    }
+  
+    &.from-front {
+      .modal-dialog {
+        transition-property: all;
+        transform: scale(3);
+      }
+  
+      &.in .modal-dialog {
+        transform: scale(1);
+      }
+    }
+  
+    &.newspaper {
+      .modal-dialog {
+        transition-property: all;
+        transform: scale(0) rotate(540deg);
+      }
+  
+      &.in .modal-dialog {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+  }
+  .modal-title{
+    text-align:"center";
+  }

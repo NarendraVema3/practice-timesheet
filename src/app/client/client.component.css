@@ -1,0 +1,55 @@
+.title
+{
+    border-bottom:1px solid #ccc;
+    padding-left:10px;
+}
+
+.icon
+{
+    padding: 5px 0px 4px 0px;
+}
+header
+{
+    color:blue;
+    font-size: 20px;
+}
+i{
+    color: red;
+}
+input[type="text"]
+{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    width:500px;
+
+}
+
+input:hover
+{
+    border-bottom:1px solid blue; 
+}
+
+label
+{
+    font-size: 18px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #f1f2f6;
+    padding-bottom: 2px;
+    width: 400px;
+}
+
+span
+{
+    font-size: 18px;
+    width: 300px;
+}
+
+
+.clientdetails
+{
+    padding-bottom: 20px;
+
+}

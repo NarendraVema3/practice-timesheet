@@ -1,0 +1,64 @@
+         
+
+     <div class="container-fluid bg"> 
+       
+
+
+
+
+
+
+<div>
+
+<div class="row" style="margin-top:15%;">
+  
+
+<div class="col-xl-4 col-md-5 col-sm-5">
+       <form class="col-xl-10 col-sm-10 col-md-10 bb" #loginForm = "ngForm" >
+           
+       <div class="h3">
+           <h2 style="color:white;" > login details  </h2>
+       <div class="bodr"  >
+       </div>
+       
+           
+       </div>
+ <div class="col-xl-12 col-sm-12 col-md-12">
+   <label for="exampleInputEmail1">Username</label>
+   <input type="text" class="form-control"   name="userName" [(ngModel)]="loginDetails.content1" placeholder="Enter email" required  >
+   
+ </div>
+ <div class="col-xl-12 col-md-12 col-sm-12">
+   <label for="exampleInputPassword1">Password</label>
+   <input type="password" class="form-control"  name="Password" [(ngModel)]="loginDetails.content2" placeholder="Enter password" required  >
+ </div>
+ <div *ngIf="validation" class="offset-2  col-xl-10 col-md-10 col-sm-10" >
+        <span style="color:red;" > Enter valid username and password </span>
+ </div>
+ <br>
+ <button  type="submit" class="btn btn-primary" name="submit" (click)="submit(true)" >Submit</button>
+ <button  type="reset" class="btn btn-danger rset" name="reset"  >Reset</button>
+</form>
+        
+        
+</div>
+        
+       
+        
+<!-- <div class="offset-5 " style="word-spacing:2px;" >
+  <label> <i> copyrights reseved by </i>  </label>
+<img src="http://linkbizitsolutions.com/wp-content/uploads/2018/03/Asset-1-e1520833496742.png " width="100px;" >
+
+
+</div> -->
+
+     
+    
+
+
+</div>
+
+
+</div>
+
+</div> 

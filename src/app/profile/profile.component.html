@@ -1,0 +1,285 @@
+<div>
+
+
+  <div>
+
+
+    <div class="ttbg">
+
+      <!-- <video  controls autoplay loop muted>
+            <source src="../../assets/profile.mp4" type="video/mp4">
+      
+            Your browser does not support the video tag.
+          </video> -->
+
+
+
+    </div>
+
+    <div class="col-xl-12">
+
+      <div>
+
+        <img class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded" src="https://www.griclub.org/assets/images/avatar_male.jpg">
+
+
+      </div>
+    </div>
+
+    <div>
+
+
+
+      <div class="col-xl-12">
+
+        <div class="row">
+
+          <div class="col-xl-6">
+            <div class="card">
+
+              <div class="card-body">
+
+                <div class="card">
+                  <div class="card-header">
+                  <strong>  About Me </strong>
+                  </div>
+
+                  <table class="table">
+
+                    <tr>
+
+                      <td>
+
+                        <span>
+                          <i class="far fa-clock"></i> &nbsp; General </span>
+
+                      </td>
+
+                      <td>
+
+                        <span>
+                          <i class="far fa-clock"></i> &nbsp; IST( {{ t }}:{{ m }} ) </span>
+
+                      </td>
+
+
+
+                    </tr>
+
+
+
+                  </table>
+
+
+                </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+          <div class="col-xl-6">
+            <div class="card">
+
+              <div class="card-body">
+
+                <div class="card">
+                  <div class="card-header" (mouseenter) ="informationE('div a') "  (onmouseout) ="personalL('div A')" >
+                    
+                    <strong>   Personal Information </strong>
+                  <span *ngIf="content1 != hide1 " style="float:right"> <a style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">  <i class="fas fa-pen">  </i> </a> </span>
+    
+                </div>
+
+                  <table class="table">
+                    <tr>
+                      <td> FirstName :</td>
+                      <td colspan="2"> </td>
+                      <td> lastName :</td>
+                      <td colspan="2"> </td>
+                      <td> NickName :</td>
+                      <td colspan="2"> </td>
+
+                    </tr>
+                    <tr>
+                      <td> Gender :</td>
+                      <td colspan="2"> </td>
+                      <td> Mobile NO : </td>
+                      <td colspan="2"> </td>
+                      <td> Email ID :</td>
+                      <td colspan="2"> </td>
+
+                    </tr>
+
+
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+      <div class="col-xl-12">
+
+
+        <div class="col-xl-12">
+          <div class="card experience">
+
+            <div class="card-body">
+
+              <div class="card">
+                <div class="card-header" (mouseenter) ="personalE('div a') "  (onmouseout) ="personalL('div A')" >
+                <strong>  Personal Details </strong>
+                <!-- <img src="http://linkbiz-demo.com/assets/images/logo.png" width="10px" height="10" > -->
+                <span *ngIf="content != hide " style="float:right"> <a style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">  <i class="fas fa-pen">  </i> </a> </span>
+               
+              </div>
+
+                <table class="table">
+
+                  <tr>
+
+                    <td>
+                      Department :
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td> Reporting To :</td>
+                    <td></td>
+
+                    <td> Source of Hire :</td>
+                    <td></td>
+                    <td> Seating Location : </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+
+                    <td>
+
+                      Work Location :
+
+                    </td>
+
+                    <td>
+
+                    </td>
+                    <td> Title :</td>
+
+                    <td> </td>
+                    <td> Employe Status :</td>
+                    <td></td>
+                    <td> Employee Type :</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+
+                    <td>
+
+                      work Phone
+                    </td>
+
+                    <td>
+
+
+                    </td>
+                    <td> Extension </td>
+                    <td></td>
+                    <td> Role </td>
+                    <td></td>
+                    <td> Experiance </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+
+                    <td colspan="5">
+
+official MailID
+                    </td>
+
+                    <td colspan="3">
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle"> Personal Details </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

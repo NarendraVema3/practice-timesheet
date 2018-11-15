@@ -1,0 +1,73 @@
+
+ 
+    form{
+    
+ width: 500px;
+ margin-left: -15%;
+
+  }
+
+
+input
+{
+         margin-left:15%;
+         border: 2px solid white;
+         background-color: #34495e;
+}
+
+label
+{
+  margin-left: 15%;
+}
+  .bb{
+    
+    border-left: 1px solid #ccc;
+    height: 300px;
+   
+  }
+  button{
+    
+    float:right;
+    margin-right: 5%;
+  }
+  .h3{
+     text-align:center;
+     padding-bottom:20px;
+     color:red;
+     text-transform:capitalize;
+     
+  }
+  .bodr
+  {
+     border:0px solid #CCC;
+     width:120px;
+     
+  }
+
+  .bg
+  { 
+      height: 850px;
+      padding-top: 30px;
+              background-color: #34495e;
+             
+  }
+  .justice
+  {
+    margin-top: 6%;
+  }
+
+.rset{
+
+   padding-left: 15px;
+   padding-right:15px;
+
+}
+h5{
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+}
+label
+{
+  color: #CCC;
+}

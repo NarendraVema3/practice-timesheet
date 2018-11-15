@@ -1,0 +1,43 @@
+section{
+    
+    display:grid;
+    grid-template-columns: 70% auto;
+}
+figure{
+    margin-top:10%;
+    margin-left: 10%;
+
+}
+
+article{
+    padding: 2em;
+}
+h3{
+    font-size: 3em;
+    margin-top:0;
+}
+img{
+    width: 250px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+}
+
+
+.dynamic{
+    padding-right: 140px;
+}
+
+
+
+
+.default{
+
+    padding-left:140px;
+
+}
+
+tr:hover
+{
+     background-color: azure;
+}

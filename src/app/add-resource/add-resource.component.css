@@ -1,0 +1,26 @@
+.title
+{
+    border-bottom:1px solid #ccc;
+    padding-left:10px;
+}
+
+.icon
+{
+    padding: 5px 0px 4px 0px;
+}
+
+i{
+    color: red;
+}
+
+span
+{
+    color: blue;
+}
+.rounded-circle
+{
+         width: 130px;
+         height:150px;
+         z-index: 50;
+
+}

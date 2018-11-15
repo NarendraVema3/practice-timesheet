@@ -1,0 +1,155 @@
+
+
+
+
+<!-- <div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource" matSort> -->
+
+    <!-- Position Column -->
+    <!-- <ng-container matColumnDef="position">
+      <mat-header-cell class="mat-header-cell" *matHeaderCellDef mat-sort-header> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+    </ng-container> -->
+
+    <!-- Name Column -->
+    <!-- <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container> -->
+
+    <!-- Weight Column -->
+    <!-- <ng-container matColumnDef="weight">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+    </ng-container> -->
+
+    <!-- Symbol Column -->
+    <!-- <ng-container matColumnDef="symbol">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> project </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+    </ng-container> -->
+
+          <!-- Symbol Column -->
+          <!-- <ng-container matColumnDef="view">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+            <mat-cell *matCellDef="let element"> <button mat-button> <i class="far fa-eye"></i></button>
+              </mat-cell>
+          </ng-container> -->
+
+                <!-- Symbol Column -->
+    <!-- <ng-container matColumnDef="delete">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+      <mat-cell *matCellDef="let element"> <button mat-button> <i class="far fa-trash-alt"></i> </button>  </mat-cell>
+    </ng-container> -->
+                <!-- Symbol Column -->
+                <!-- <ng-container matColumnDef="edit">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> <button mat-button (click)="editProject()"> <i class="far fa-edit"></i> </button>  </mat-cell>
+                </ng-container>
+            
+
+
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5,7,10]"
+                 [showFirstLastButtons]="true">
+  </mat-paginator>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5> <b> Projects </b> </h5>
+
+
+<div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource" matSort>
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell class="mat-header-cell" *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+        <mat-cell *matCellDef="let i=index"> {{i+1}} </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="projectname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Project Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.projectName}} </mat-cell>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="projectdescription">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.projectDesc}} </mat-cell>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="projectcost">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Cost </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.projectcost}} </mat-cell>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="projectmanager">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Manager </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.projectmanager}}
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="client">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Client </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.clientName}}
+        </mat-cell>
+      </ng-container>
+  
+       <!-- Symbol Column -->
+          <ng-container matColumnDef="view">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+            <mat-cell *matCellDef="let element"> <button mat-button [routerLink]="['/changeproject',element.projectName]"> <i class="far fa-eye"></i></button>
+              </mat-cell>
+          </ng-container>
+
+                <!-- Symbol Column -->
+    <ng-container matColumnDef="delete">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+      <mat-cell *matCellDef="let element"> <button mat-button [routerLink]="['/changeproject',element.projectName]" > <i class="far fa-trash-alt"></i> </button>  </mat-cell>
+    </ng-container> 
+                <!-- Symbol Column -->
+                 <ng-container matColumnDef="edit">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> <button mat-button [routerLink]="['/changeproject',element.projectName]"> <i class="far fa-edit"></i> </button>  </mat-cell>
+                </ng-container>
+  
+  
+  
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  
+    <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5,7,10]" [showFirstLastButtons]="true" [length]="this.project?.length">
+    </mat-paginator>
+  </div>
+  

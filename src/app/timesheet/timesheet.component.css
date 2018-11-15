@@ -1,0 +1,11 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .mat-table {
+    overflow: hidden;
+    max-height: 500px;
+  }
+
